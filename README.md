@@ -1,15 +1,33 @@
-💧 Water Quality Prediction
-This project focuses on predicting the potability of water using machine learning techniques. It utilizes a real-world dataset containing various water quality parameters and applies multiple classification models to determine whether the water is safe to drink.
+Water Quality Prediction - RMS
+This project aims to predict multiple water quality parameters using machine learning techniques, specifically MultiOutputRegressor wrapped around a RandomForestRegressor. 
+Overview
+Access to clean water is a critical global concern. Accurate prediction of various water quality metrics can help in early detection of pollution and ensure timely intervention.
 
-📌 Project Objectives
-Explore and preprocess a dataset containing chemical and physical properties of water.
+In this project, we:
 
-Build machine learning models to classify water as potable (safe) or non-potable.
+Collected and preprocessed real-world water quality datasets
+Used supervised machine learning for multi-target regression
+Built a pipeline using MultiOutputRegressor with RandomForestRegressor
+Evaluated the model using appropriate regression metrics
+Technologies Used
+Python 3.12
+Pandas, NumPy – Data handling
+Scikit-learn – Machine learning model and evaluation
+Matplotlib, Seaborn – Data visualization
+Jupyter Notebook – Interactive experimentation
+Predicted Water Quality Parameters
+The model predicts multiple water quality parameters such as:
 
-Evaluate model performance and select the best performing algorithm.
+NH4
+BOD5 (BSK5)
+Colloids
+O2, NO3, NO2, SO4, PO4 and
+CL
+Model Performance
+The model was evaluated using:
 
-📊 Model Performance
-Random Forest and Decision Tree classifiers performed best with high accuracy and generalization on unseen data. The notebook contains plots and detailed performance metrics for comparison.
-
+R² Score
+Mean Squared Error (MSE)
+Performance was acceptable across all parameters
 Best Prediction Model:
 https://drive.google.com/file/d/1YiN86ahdoups3OQDk08ZbssvC8eS9ki0/view?usp=drive_link
